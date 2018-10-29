@@ -17,11 +17,11 @@ export class PermissionService {
     isGranted(permission: PermissionType): boolean {
         const permissions = PermissionFactory.getInstance().permissions;
 
-        permissions.forEach(perm => {
+        for (const perm of permissions) {
             if (perm === permission) {
                 return true;
             }
-        });
+        }
         return false;
     }
 

@@ -31,5 +31,6 @@ export class PermissionFactory {
                 this.instance = new UnknownPermission();
                 break;
         }
+        return this.instance;
     }
 }
