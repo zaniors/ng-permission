@@ -1,5 +1,5 @@
 /** 定义角色类型 */
-enum Role {
+export enum Role {
     /** 超级管理员 */
     SUPERADMIN = 'sudo',
     /** 管理员 */
